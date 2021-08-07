@@ -1,53 +1,337 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href=
-        "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-        </link>
-        
- />
-        
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="sidebar">
-                <div class="inner p-4">
-                    <!-- <div class="img logo mb-5">abc</div>  -->
-                    <a href="#" class="img logo mb-2" style="background-image: url(./img/logo12.png);"></a>
-                    <!-- Logo -->
-                    <div class="main-menu">
-                        <ul>
-                            <li>
-                                <span class="opener">Boards/Shields/Accessory</span>
-                            </li>
-                            <li><a href="index.html">More Boards<i class="fas fa-sort-down pull-right"></i></a></li>
-                            <li><a href="index.html">Cables & Wire<i class="fas fa-sort-down pull-right"></i></a></li>
-                            <li><a href="index.html">Cables & Enclosures<i class="fas fa-sort-down pull-right"></i></a></li>
-                            <li><a href="index.html">Connectors<i class="fas fa-sort-down pull-right"></i></a></li>
-                            <li><a href="index.html">Relay/Switches/Hardware<i class="fas fa-sort-down pull-right"></i></a></li>
-                            <li><a href="index.html">Caps/Resistors/Inductors<i class="fas fa-sort-down pull-right"></i></a></li>                            
-                            <li><a href="index.html">IoT/Wireless<i class="fas fa-sort-down pull-right"></i></a></li>
-                            
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css" />
+	
 
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    </body>
+    <!-- ANIMATION TEXT -->
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<div class="site-wrap">
+		<header class="sidebar">
+			<div class="site-logo">
+				<!-- Logo -->
+				<a href="#" class="img logo" style="background-image: url(./img/logo.png);"></a>
+			</div>
+			<div class="main-menu" data-aos="fade-right">
+				<nav id="menu">
+					<ul class="list-item">
+						<li>
+							<a class="opener feat-btn">Dropdown One<div class="arrow-down"></div></a>
+							<ul class="feat-show list-checkbox">
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										Raspberry Pi
+									</label>
+								</li>
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										Arduino
+									</label>
+								</li>
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										micro: bit
+									</label>
+								</li>
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										BeagleBone
+									</label>
+								</li>
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										Feather
+									</label>
+								</li>
+								<li class="list__item">
+									<label class="label--checkbox">
+										<input type="checkbox" class="checkbox">
+										Photon
+									</label>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a class="opener">More Boards</a>
+						</li>
+						<li>
+							<a class="opener">Cables & Wire</a>
+						</li>
+						<li>
+							<a class="opener">Cables & Enclosures</a>
+						</li>
+						<li>
+							<a class="opener">Connectors</a>
+						</li>
+						<li>
+							<a class="opener">Relay/Switches/Hardware</a>
+						</li>
+						<li>
+							<a class="opener">Caps/Resistors/Inductors</a>
+						</li>
+						<li>
+							<a class="opener">IoT/Wireless</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="main-content">
+			<section class="site-section bg-image" style="background-image: url('img/background-image.svg');"
+				data-stellar-background-ratio="0.5"></section>
+			<section class="row justify-content-center">
+				<div class="main-title text-center">
+					<span data-aos="fade-up" class="font-title">Online Workshop</span>
+					<br><br>
+					<span data-aos="fade-up" data-aos-delay="10" class="font-slogan ">The way to make your future</span>
+				</div>
+			</section>
+
+			<section class="latest-section-title" data-aos="fade-up" data-aos-easing="ease-in-quad">
+				<div class="row">
+					<div class="section-title">
+						<h5>Latest Courses</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 mx-auto">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+							<ol class="carousel-indicators">
+								<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+								<li data-target="#myCarousel" data-slide-to="1"></li>
+								<li data-target="#myCarousel" data-slide-to="2"></li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-md-3 col-sm-12 col-12">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>A course for demo</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-12 col-12">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Course 1</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-12 col-12">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Test course</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3 col-sm-12 col-12">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Mike Test</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/course1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>A course for demo</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Course 1</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Test course</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Mike Test</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/course1.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>A course for demo</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course2.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Course 1</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Test course</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<div class="thumb-wrapper">
+												<div class="img-box">
+													<img src="img/Course3.png" class="img-fluid" alt="">
+												</div>
+												<div class="thumb-content">
+													<h4>Mike Test</h4>
+													<p>FPT vendor 01</p>
+													<a href="#" class="btn btn-primary">View Course <i
+															class="fa fa-angle-right"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div>
+								<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+									<i class="fa fa-angle-left"></i>
+								</a>
+								<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+									<i class="fa fa-angle-right"></i>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="row footer">
+				<div class="middle-text">
+					Copyright © 1995-2019, Digi-Key Electronics. | All Rights Reserved. | <span class="red-color">Terms
+						& Conditions</span> | <span class="red-color">Privacy Statement</span><br>
+					Local Support: 701 Brooks Avenue South, Thief River Falls, MN 56701 USA
+				</div>
+			</section>
+		</main>
+	</div>
+	<script>
+		AOS.init({ duration: 900, })
+		$('.feat-btn').on('click', function (e) {
+			$('.arrow-down').toggleClass("active")
+			$('nav .feat-btn').toggleClass("active")
+			$('nav ul .feat-show').toggleClass('active');
+
+		});
+		$('.feat-btn').on('click', function (e) {
+			(this.style.backgroundColor == "" || this.style.backgroundColor == "black") ? $(this).css("background-color", "#7d7d8c82") : $(this).css("background-color", "black")
+		});
+	</script>
+</body>
+
 </html>
